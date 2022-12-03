@@ -18,7 +18,9 @@
 
   <header>
   <div class="logo">
-    <img src="./images/logo.svg" alt="logo">
+    <a href="/">
+      <img src="./images/logo.svg" alt="logo">
+    </a>
   </div>
   <div class="burger_icon">
     <div class="ex">
@@ -35,7 +37,7 @@
     </ul>
     <div class="account">
       <div class="login"><a href="#">Login</a></div>
-      <div class="sign_up"><a href="#">Sign Up</a></div>
+      <div class="sign_up"><a class="btn oval" href="#">Sign Up</a></div>
     </div>
   </nav>
   </header>
@@ -55,11 +57,16 @@
     </div>
   </section>
   <section class="shortening">
+    <!-- <form action="./style.css" method="post"> -->
     <div class="ex">
-      <input id="main_input" placeholder="Shorten a link here..." type="text">
-      <label for="main_input">Please add a link</label>
-      <button class="btn" type="button">Shorten It!</button>
-    </div>
+        <input id="main_input" placeholder="Shorten a link here..." type="text">
+        <label id="main_lable" for="main_input">Please add a link</label>
+        <button id="search_btn" class="btn" type="button">Shorten It!</button>
+      </div>
+    <!-- </form> -->
+  </section>
+  <section id="results" class="results">
+
   </section>
   <section class="statis">
     <div class="section_title">
@@ -148,11 +155,11 @@
           <img src="./images/icon-instagram.svg" alt="instagram_icon">
         </a>
       </div>
+      <div class="attribution">
+        Coded by <a rel="noopener" target="_blank" href="https://emadcode.com">Emadcode.com</a>.
+      </div>
     </div>
 
-    <div class="attribution">
-      Coded by <a target="_blank" href="https://emadcode.com">Emadcode.com</a>.
-    </div>
   </footer>
   <script src="index.js"></script>
 </body>
